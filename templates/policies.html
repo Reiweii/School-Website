@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>International Children's House - Enrollment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<header class="header-container">
+
+    <img src="{{ url_for('static', filename='Image/Logo.png') }}" alt="ICH Logo" class="school-logo">
+
+    <div class="header-text">
+        <h1>International Children's House</h1>
+        <p>Where young minds grow and learn with joy</p>
+    </div>
+
+</header>
+
+<nav class="navbar">
+    <div class="nav-left">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About Us</a>
+        <a href="{{ url_for('programs') }}">Programs</a>
+        <a href="{{ url_for('gallery') }}">Gallery</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+        <a href="{{ url_for('enrollment') }}">Enrollment</a>
+    </div>
+    <div class="nav-right">
+        
+        <button class="hamburger" onclick="toggleMenu('hamburgerMenu1')">☰</button>
+        <div id="hamburgerMenu1" class="hamburger-menu">
+            <a href="{{ url_for('tuition') }}">Tuition & Fees</a>
+            <a href="{{ url_for('facilities') }}">Facilities</a>
+            <a href="{{ url_for('services') }}">Student Services</a>
+            <a href="{{ url_for('tools') }}">Tools & Equipment</a>
+            <a href="{{ url_for('policies') }}">Policies</a>
+            <a href="{{ url_for('marketing') }}">Marketing</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+<section>
+
+<div class="card">
+
+<h2>School Policies & Handbook</h2>
+
+<ul>
+    <li>
+        <strong>Attendance Policy:</strong>
+        <p>Attendance plays a key role in your child’s learning journey. Students are expected to arrive on time and participate in all scheduled classes. If a child is absent, parents should inform the school in advance. Opportunities for make-up lessons will be provided whenever possible.</p>
+    </li>
+
+    <li>
+        <strong>Safety Guidelines:</strong>
+        <p>The safety of every student is our top priority. Children should always follow classroom and playground rules and listen carefully during drills. Teachers and staff supervise all activities to ensure a secure and nurturing environment.</p>
+    </li>
+
+    <li>
+        <strong>Health Protocols:</strong>
+        <p>We promote a healthy school community. Students showing signs of illness should remain at home. Frequent handwashing, sanitizing, and proper respiratory etiquette are emphasized. Vaccination records must be kept updated according to school requirements.</p>
+    </li>
+
+    <li>
+        <strong>Parent Communication Rules:</strong>
+        <p>Open and respectful communication between parents and staff is encouraged. Parents will receive regular updates through newsletters, emails, and scheduled meetings to stay informed about their child’s progress and school activities.</p>
+    </li>
+
+    <li>
+        <strong>Student Behavior Guidelines:</strong>
+        <p>Students are expected to treat peers, teachers, and staff with respect and kindness. Bullying, harassment, or disruptive behavior is not tolerated. Positive actions are recognized through awards, encouragement, and praise.</p>
+    </li>
+
+    <li>
+        <strong>Technology Use Policy:</strong>
+        <p>School technology must be used responsibly. Devices should only support educational purposes during school hours. Accessing inappropriate websites, games, or content is strictly prohibited.</p>
+    </li>
+
+    <li>
+        <strong>Dress Code:</strong>
+        <p>Students are expected to wear the school uniform or attire approved by the school. Clothing should be neat, safe, and comfortable for learning and play activities.</p>
+    </li>
+
+    <li>
+        <strong>Emergency Procedures:</strong>
+        <p>Clear procedures are in place for fire, earthquake, and medical emergencies. Students participate in regular safety drills, and staff are trained to respond efficiently to any situation.</p>
+    </li>
+
+    <li>
+        <strong>Extracurricular Activities:</strong>
+        <p>Participation in clubs, sports, and special programs is encouraged. All activities must follow school safety rules. Parents must provide necessary permissions and support for their child’s participation.</p>
+    </li>
+
+    <li>
+        <strong>Discipline & Consequences:</strong>
+        <p>The school follows a fair system of discipline. Minor infractions may result in verbal warnings, while repeated or serious violations involve meetings with parents and appropriate consequences, which may include temporary suspension.</p>
+    </li>
+</ul>
+
+</div>
+
+<div class="card">
+    <h2>School Handbook</h2>
+    <p>The International Children's House Handbook provides comprehensive information about our school, designed to help parents, students, and staff understand our policies, expectations, and programs. It serves as a guide to make your child’s learning experience safe, enjoyable, and productive.</p>
+
+    <p>Inside the handbook, you will find detailed explanations about our attendance policy, health and safety protocols, and student behavior guidelines. It outlines how we maintain a nurturing environment where children can grow academically, socially, and emotionally.</p>
+
+    <p>Additionally, the handbook includes important information about extracurricular activities, technology use, and school uniforms. It also explains our procedures during emergencies, ensuring that parents and students know what to do in any situation.</p>
+
+    <p>Our goal is to keep parents well-informed and actively involved in their child’s education. The handbook also provides tips for supporting your child’s learning at home and encourages open communication between parents and teachers.</p>
+
+    <ul>
+        <li>Attendance and punctuality rules</li>
+        <li>Health and safety protocols</li>
+        <li>Student behavior and discipline guidelines</li>
+        <li>Extracurricular activities and participation rules</li>
+        <li>Technology use and digital safety policies</li>
+        <li>Emergency procedures and contact information</li>
+    </ul>
+
+    <p>You can download the full handbook below to read more in detail and have it as a reference whenever needed:</p>
+    <a href="{{ url_for('static', filename='docs/ICH_Handbook.pdf') }}" download class="download-button">📄 Download Handbook</a>
+</div>
+
+</section>
+</main>
+
+<footer>
+<p>&copy; 2026 International Children's House</p>
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

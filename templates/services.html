@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>International Children's House - Student Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<header class="header-container">
+
+    <img src="{{ url_for('static', filename='Image/Logo.png') }}" alt="ICH Logo" class="school-logo">
+
+    <div class="header-text">
+        <h1>International Children's House</h1>
+        <p>Where young minds grow and learn with joy</p>
+    </div>
+
+</header>
+
+<nav class="navbar">
+    <div class="nav-left">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About Us</a>
+        <a href="{{ url_for('programs') }}">Programs</a>
+        <a href="{{ url_for('gallery') }}">Gallery</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+        <a href="{{ url_for('enrollment') }}">Enrollment</a>
+    </div>
+    <div class="nav-right">
+        
+        <button class="hamburger" onclick="toggleMenu('hamburgerMenu1')">☰</button>
+        <div id="hamburgerMenu1" class="hamburger-menu">
+            <a href="{{ url_for('tuition') }}">Tuition & Fees</a>
+            <a href="{{ url_for('facilities') }}">Facilities</a>
+            <a href="{{ url_for('services') }}">Student Services</a>
+            <a href="{{ url_for('tools') }}">Tools & Equipment</a>
+            <a href="{{ url_for('policies') }}">Policies</a>
+            <a href="{{ url_for('marketing') }}">Marketing</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+<section>
+
+<div class="card">
+
+<h2>Student Services</h2>
+
+<ul>
+    <li>
+        <strong>Guidance and Counseling:</strong>
+        <p>Our trained counselors provide personal, academic, and social guidance to help students navigate challenges, build self-confidence, and develop coping skills.</p>
+        <p>Individual or group sessions are offered depending on student needs.</p>
+    </li>
+
+    <li>
+        <strong>Health and Safety Monitoring:</strong>
+        <p>The school ensures students’ well-being through daily health checks, supervision during activities, and maintaining a secure environment in classrooms, playgrounds, and common areas.</p>
+    </li>
+
+    <li>
+        <strong>Parent-Teacher Communication:</strong>
+        <p>Open and respectful communication with parents is encouraged. Updates about student progress, school events, and important announcements are shared via newsletters, emails, and scheduled meetings.</p>
+    </li>
+
+    <li>
+        <strong>School Events and Programs:</strong>
+        <p>Students can participate in extracurricular activities, cultural programs, and special events that promote creativity, teamwork, leadership, and holistic learning.</p>
+    </li>
+
+    <li>
+        <strong>Student Progress Monitoring:</strong>
+        <p>Teachers assess students’ academic performance, behavior, and social skills regularly. Constructive feedback and support are provided to help each child achieve personal and academic growth.</p>
+    </li>
+
+    <li>
+        <strong>Special Needs Support:</strong>
+        <p>Students requiring additional assistance receive tailored support plans. Collaboration with parents and professionals ensures that every child’s learning needs are met.</p>
+    </li>
+
+    <li>
+        <strong>Library and Learning Resources:</strong>
+        <p>Access to age-appropriate books, learning materials, and educational tools is provided to support reading habits, research, and independent learning.</p>
+    </li>
+
+    <li>
+        <strong>Technology Assistance:</strong>
+        <p>Students are guided on proper use of educational technology, promoting digital literacy and safe online practices while enhancing learning experiences.</p>
+    </li>
+
+    <li>
+        <strong>Extracurricular Clubs:</strong>
+        <p>Opportunities for sports, arts, music, and other clubs are available. These activities help students develop new skills, build friendships, and enjoy balanced growth.</p>
+    </li>
+
+    <li>
+        <strong>Mentoring and Leadership Programs:</strong>
+        <p>Older students can participate in mentoring programs, helping peers and taking on leadership roles to cultivate responsibility and social awareness.</p>
+    </li>
+</ul>
+
+</div>
+
+</section>
+</main>
+
+<footer>
+<p>&copy; 2026 International Children's House</p>
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

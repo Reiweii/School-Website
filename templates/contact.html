@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>International Children's House - Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header class="header-container">
+
+    <img src="{{ url_for('static', filename='Image/Logo.png') }}" alt="ICH Logo" class="school-logo">
+
+    <div class="header-text">
+        <h1>International Children's House</h1>
+        <p>Where young minds grow and learn with joy</p>
+    </div>
+
+</header>
+
+<nav class="navbar">
+    <div class="nav-left">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About Us</a>
+        <a href="{{ url_for('programs') }}">Programs</a>
+        <a href="{{ url_for('gallery') }}">Gallery</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+        <a href="{{ url_for('enrollment') }}">Enrollment</a>
+    </div>
+    <div class="nav-right">
+        
+        <button class="hamburger" onclick="toggleMenu('hamburgerMenu1')">☰</button>
+        <div id="hamburgerMenu1" class="hamburger-menu">
+            <a href="{{ url_for('tuition') }}">Tuition & Fees</a>
+            <a href="{{ url_for('facilities') }}">Facilities</a>
+            <a href="{{ url_for('services') }}">Student Services</a>
+            <a href="{{ url_for('tools') }}">Tools & Equipment</a>
+            <a href="{{ url_for('policies') }}">Policies</a>
+            <a href="{{ url_for('marketing') }}">Marketing</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+<section>
+    <div class="card">
+        <h2>Contact Us</h2>
+        <p><strong>Address:</strong> 64 Vienna Street, Merville Subdivision, Parañaque City</p>
+        <p><strong>Phone:</strong> (02) 8828 8148 / 0906 459 4201</p>
+        <p><strong>Email:</strong> intlchildrenshouse@gmail.com</p>
+        <p><strong>Facebook:</strong> 
+            <a href="https://web.facebook.com/profile.php?id=100063542171318" target="_blank" style="color:#4CAF50; text-decoration:none;">
+                Visit our Facebook Page
+            </a>
+        </p>
+    </div>
+</section>
+</main>
+
+<footer>
+    <p>&copy; 2026 International Children's House. All Rights Reserved.</p>
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
